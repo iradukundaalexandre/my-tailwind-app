@@ -71,3 +71,21 @@ with a provider call (for example the Resend API using a key from `.env`) and re
 flags, so the front end will update automatically.
 
 Stored messages are ignored by git (`server/data/messages.json`).
+
+## Deploy to Fly.io
+
+The project includes a `Dockerfile`, `.dockerignore`, and `fly.toml` for Fly.io.
+The API and the built React app run together on port 8080, and a persistent volume
+keeps `messages.json` between deploys.
+
+```bash
+fly auth login
+fly apps create creative-studio-iradukunda   # pick a globally unique name
+fly volumes create messages_data --region ams --size 1
+fly secrets set ADMIN_PASSWORD="choose-a-strong-password"
+fly deploy
+```
+
+If you change the app name or region, update `app` and `primary_region` in `fly.toml`
+and use the same region for the volume. The live URL will be
+`https://<app-name>.fly.dev` (public site at `/`, admin at `/admin`).
