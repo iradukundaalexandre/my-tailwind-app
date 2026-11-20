@@ -1,7 +1,0 @@
-node_modules
-dist
-.git
-.env
-*.log
-server/data/messages.json
-server/data/messages.json.tmp
