@@ -450,7 +450,7 @@ function App() {
             © 2026 Creative Studio. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
-            <a href="/admin" className="text-[#d6ad87]">Admin</a>
+            <a href="./admin" className="text-[#d6ad87]">Admin</a>
             <a href="#home" className="text-[#d6ad87]">
               Back to Top ↑
             </a>

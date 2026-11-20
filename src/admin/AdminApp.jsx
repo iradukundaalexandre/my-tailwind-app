@@ -137,7 +137,7 @@ export default function AdminApp() {
           transition={{ duration: 0.5 }}
           className="w-full max-w-md"
         >
-          <a href="/" className="inline-flex items-center gap-2 text-sm text-[#a47a56] font-semibold mb-8">
+          <a href="./" className="inline-flex items-center gap-2 text-sm text-[#a47a56] font-semibold mb-8">
             <ArrowLeft size={16} /> Back to website
           </a>
 
@@ -203,7 +203,7 @@ export default function AdminApp() {
           </div>
           <div className="flex items-center gap-2">
             <a
-              href="/"
+              href="./"
               className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm hover:bg-[#f1e7df]"
             >
               <ArrowLeft size={16} /> View site
@@ -276,7 +276,7 @@ export default function AdminApp() {
               <p className="text-gray-500 mt-2">
                 Submissions from the contact form will appear here.
               </p>
-              <a href="/" className="inline-block mt-6 text-[#a47a56] font-semibold">
+              <a href="./" className="inline-block mt-6 text-[#a47a56] font-semibold">
                 Open the website →
               </a>
             </div>

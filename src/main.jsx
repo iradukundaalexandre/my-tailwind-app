@@ -4,7 +4,7 @@ import App from './App.jsx'
 import AdminApp from './admin/AdminApp.jsx'
 import './index.css'
 
-const isAdmin = window.location.pathname.replace(/\/+$/, '') === '/admin'
+const isAdmin = window.location.pathname.replace(/\/+$/, '').endsWith('/admin')
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
